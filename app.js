@@ -113,17 +113,6 @@ masterPlay.addEventListener('click',()=>{
         wave.classList.remove('active2');
     }
 })
-// const makeAllPlays = () =>{
-//     Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
-//             element.classList.add('bi-play-circle-fill');
-//             element.classList.remove('bi-pause-circle-fill');
-//     })
-// }
-// const makeAllBackgrounds = () =>{
-//     Array.from(document.getElementsByClassName('songItem')).forEach((element)=>{
-//             element.style.background= "rgb(105, 105, 170, 0)";
-//     })
-// }
 
 playMusic(i+1);
 
@@ -134,31 +123,7 @@ let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{
         index = e.target.id;
-        // makeAllPlays();
-        // e.target.classList.remove('bi-play-circle-fill');
-        // e.target.classList.add('bi-pause-circle-fill');
-
-        // music.src = `web_music/m${index}.mp3`;
-        // poster_master_play.src = `lm_thumbnail/mm${index}.png`;
-        // music.play();
-        // let song_title = songs.filter((ele)=>{
-        //     return ele.id == index;
-        // })
-        // song_title.forEach(ele =>{
-        //     let {songName} = ele;
-        //     title.innerHTML = songName;
-        // })
-        // masterPlay.classList.remove('bi-play-fill');
-        // masterPlay.classList.add('bi-pause-fill');
-        // wave.classList.add('active2');
-        // music.addEventListener('ended',()=>{
-        //     masterPlay.classList.add('bi-play-fill');
-        //     masterPlay.classList.remove('bi-pause-fill');
-        //     wave.classList.remove('active2');
-        // })
-        // makeAllBackgrounds();
-        // Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background= "rgb(105, 105, 170, .1)";
-
+       
         playMusic(i+1);
     })
 })
@@ -253,12 +218,7 @@ back.addEventListener('click', ()=>{
         let {songName} = ele;
         title.innerHTML = songName;
     })
-    // makeAllPlays()
-
-    // document.getElementById(`${index}`).classList.remove('bi-play-fill');
-    // document.getElementById(`${index}`).classList.add('bi-pause-fill');
-    // makeAllBackgrounds();
-    // Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background= "rgb(105, 105, 170, .1)";
+    
 
     playMusic(i+1);
 
@@ -279,13 +239,7 @@ next.addEventListener('click', ()=>{
         let {songName} = ele;
         title.innerHTML = songName;
     })
-    // makeAllPlays()
-
-    // document.getElementById(`${index}`).classList.remove('bi-play-fill');
-    // document.getElementById(`${index}`).classList.add('bi-pause-fill');
-    // makeAllBackgrounds();
-    // Array.from(document.getElementsByClassName('songItem'))[`${index-1}`].style.background= "rgb(105, 105, 170, .1)";
-
+   
     playMusic(i+1);
 
 })
@@ -315,10 +269,6 @@ right_scrolls.addEventListener('click', ()=>{
 })
 
 
-
-
-
-
 // ========== Mobile Touch Support ==========
 // Play/Pause Buttons
 document.querySelectorAll('.playListPlay').forEach(button => {
@@ -340,23 +290,7 @@ document.getElementById('right_scroll').addEventListener('click', () => {
 });
 
 function playMusic(index) {
-    // makeAllPlays();
-    // document.getElementById(index).classList.remove('bi-play-circle-fill');
-    // document.getElementById(index).classList.add('bi-pause-circle-fill');
-
-    // music.src = `web_music/m${index}.mp3`;
-    // poster_master_play.src = `lm_thumbnail/mm${index}.png`;
-    // music.play();
-
-    // let song_title = songs.find(ele => ele.id == index);
-    // if(song_title) title.innerHTML = song_title.songName;
-
-    // masterPlay.classList.remove('bi-play-fill');
-    // masterPlay.classList.add('bi-pause-fill');
-    // wave.classList.add('active2');
-
-    // makeAllBackgrounds();
-    // Array.from(document.getElementsByClassName('songItem'))[index-1].style.background= "rgb(105, 105, 170, .1)";
+    
 
     playMusic(i+1);
     
